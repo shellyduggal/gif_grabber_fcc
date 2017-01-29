@@ -1,0 +1,102 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, h1, h2, h3, p, 
+a, img, ol, ul, li, form, label, caption,  
+figure, footer, header, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: middle;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	background-color: #FEFFE6;
+	color: #215898;
+	line-height: 1.2;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+}
+
+ol, ul {
+	list-style-type: none;
+}
+
+/* micro clear fix */
+.grouping:before,
+.grouping:after {
+	content:" ";
+	display:table;
+}
+
+.grouping:after {
+	clear:both;
+}
+
+img, iframe, video, object {
+	max-width: 100%;
+	height:auto;
+	display: block;
+}
+
+
+/****************/
+/*** CONTENT ****/
+/****************/
+
+body {
+  background: url(http://res.cloudinary.com/duggalsf/image/upload/v1480634297/coffee-1576552_1280_yvpgwp.jpg) no-repeat center fixed;
+  background-size: cover;
+  font-family: serif;
+  font-size: 100%;
+  color: #2c120e;
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: rgba(199, 166, 114, 0.6);
+  max-width: 66%;
+  margin: 15% auto;
+}
+
+.jumbotron h2 {
+  font-weight: bold;
+  font-size: 2.5vw;
+}
+
+.quote {
+  margin: 2% auto;
+  max-width: 90%;
+}
+
+button {
+  background-color: rgba(44, 18, 14, 0.8);
+  border: 1px solid #2c120e;
+  color: rgb(200,190,170);
+  padding: 2%;
+  margin: 1% auto;
+  font-size: 2vw;
+}
+
+p.attr {
+  color: white;
+  font-size: 2vw;
+  background-color: rgb(44, 18, 14);
+  border: 1px solid #2c120e;
+  color: rgb(200,190,170);
+  padding: 1%;
+  letter-spacing: 1.5px;
+}
+
+p.attr > a {
+  text-decoration: none;
+  color: white;
+}
