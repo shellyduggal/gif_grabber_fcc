@@ -3,31 +3,21 @@
    License: none (public domain)
 */
 
-html, body, div, span, h1, h2, h3, p, 
-a, img, ol, ul, li, form, label, caption,  
-figure, footer, header, nav, section {
+html, body, div, span, h1, h2, h3, h4, p, a, img, ol, ul, li, form, label, caption, figure, footer, header, nav, section {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: middle;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+figure, footer, header, nav, section {
 	display: block;
-}
-body {
-	background-color: #FEFFE6;
-	color: #215898;
-	line-height: 1.2;
-	font-family: 'Roboto Condensed', sans-serif;
-	text-align: center;
 }
 
 ol, ul {
-	list-style-type: none;
+	list-style: none;
 }
 
 /* micro clear fix */
@@ -43,60 +33,89 @@ ol, ul {
 
 img, iframe, video, object {
 	max-width: 100%;
-	height:auto;
-	display: block;
 }
-
 
 /****************/
 /*** CONTENT ****/
 /****************/
 
 body {
-  background: url(http://res.cloudinary.com/duggalsf/image/upload/v1480634297/coffee-1576552_1280_yvpgwp.jpg) no-repeat center fixed;
-  background-size: cover;
-  font-family: serif;
-  font-size: 100%;
-  color: #2c120e;
-  text-align: center;
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	color: #f7f7f7;
 }
 
-.jumbotron {
-  background-color: rgba(199, 166, 114, 0.6);
-  max-width: 66%;
-  margin: 15% auto;
+.wrapper {
+	max-width: 100%;
+	overflow-x: hidden;
+	height: 100vh;
+	position: relative;
 }
 
-.jumbotron h2 {
-  font-weight: bold;
-  font-size: 2.5vw;
+.content {
+	position: relative;
+}
+
+.title {
+	max-width: 90%;
+	height: 250px;
+	margin: 15% auto;
+	background-color: #F1BBAB;
+	box-shadow: 1px 1px 2px #909090;
+}
+
+h1 {
+	color: #909090;
+	font-size: 2em;
+	letter-spacing: 0.9px;
+	margin-top: 10%;
+}
+
+h2 {
+	color: #909090;
+	font-size: 1.5em;
+	letter-spacing: 0.9px;
 }
 
 .quote {
-  margin: 2% auto;
-  max-width: 90%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	max-width: 90%;
+	overflow-x: hidden;
+	border: none;
+	box-shadow: -1px -1px 2px black;
+}
+
+.quote > img {
+	margin: 0 auto;
 }
 
 button {
-  background-color: rgba(44, 18, 14, 0.8);
-  border: 1px solid #2c120e;
-  color: rgb(200,190,170);
-  padding: 2%;
-  margin: 1% auto;
-  font-size: 2vw;
+	background-color: #F1BBAB;
+	color: #f7f7f7;
+	border: none;
+	box-shadow: 1px 1px 2px #909090;
+	font-size: 1.1em;
+	font-family: 'Playfair Display', serif;
 }
 
-p.attr {
-  color: white;
-  font-size: 2vw;
-  background-color: rgb(44, 18, 14);
-  border: 1px solid #2c120e;
-  color: rgb(200,190,170);
-  padding: 1%;
-  letter-spacing: 1.5px;
+footer {
+	background-color: #909090;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
 }
 
-p.attr > a {
-  text-decoration: none;
-  color: white;
+.attr {
+	color: #f7f7f7;
+	text-decoration: none;
+	cursor: pointer;
 }
+
+
+
+
+
+
